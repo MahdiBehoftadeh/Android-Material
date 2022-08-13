@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id 'maven-publish'
 }
 
 android {
@@ -9,8 +10,8 @@ android {
         applicationId "ir.behoftadeh.libraries.material"
         minSdk 16
         targetSdk 32
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "1.0.3"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -20,11 +21,13 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
 }
 
 dependencies {
@@ -39,4 +42,18 @@ dependencies {
     // Dot ProgressBar
     implementation 'com.github.ybq:Android-SpinKit:1.4.0'
 
+}
+
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'ir.behoftadeh.libraries'
+            artifactId = 'material'
+            version = '1.0.3'
+
+            afterEvaluate {
+                from components.release_apk
+            }
+        }
+    }
 }
