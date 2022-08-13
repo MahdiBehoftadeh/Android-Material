@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">Material Components</string>
+
+    <string name="title">تیتر</string>
+    <string name="hint">راهنما</string>
+    <string name="error">خطا</string>
+    <string name="slash_with_space">" / "</string>
+
+</resources>

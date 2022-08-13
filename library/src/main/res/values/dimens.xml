@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="corner_radius_edittext">10dp</dimen>
+    <dimen name="corner_radius_cursor">20dp</dimen>
+
+    <dimen name="text_size_error">10sp</dimen>
+
+</resources>

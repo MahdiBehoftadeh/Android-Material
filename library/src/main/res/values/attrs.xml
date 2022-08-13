@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TitledEditText">
+        <attr name="te_title" format="string"/>
+        <attr name="te_hint" format="string"/>
+        <attr name="te_text" format="string"/>
+        <attr name="te_error_message" format="string"/>
+        <attr name="te_counter_max" format="integer"/>
+        <attr name="te_icon" format="reference"/>
+        <attr name="te_line_color" format="color"/>
+        <attr name="te_counter_enabled" format="boolean"/>
+        <attr name="te_icon_enabled" format="boolean"/>
+        <attr name="te_error_enabled" format="boolean"/>
+        <attr name="android:inputType"/>
+    </declare-styleable>
+
+</resources>
